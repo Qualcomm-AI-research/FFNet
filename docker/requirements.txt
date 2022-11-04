@@ -1,0 +1,8 @@
+apex
+numpy
+opencv_python
+Pillow
+runx
+scikit_image
+scipy
+torchvision
