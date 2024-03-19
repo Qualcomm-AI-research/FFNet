@@ -1,26 +1,26 @@
-wget <path_to_ffnet101.zip>
-wget <path_to_ffnet50.zip>
+wget https://github.com/Qualcomm-AI-research/FFNet/releases/download/models/ffnet101.zip
+wget https://github.com/Qualcomm-AI-research/FFNet/releases/download/models/ffnet50.zip
 
-wget <path_to_ffnet150.zip>
-wget <path_to_ffnet134.zip>
-wget <path_to_ffnet86.zip>
-wget <path_to_ffnet56.zip>
-wget <path_to_ffnet34.zip>
-wget <path_to_ffnet18.zip>
+wget https://github.com/Qualcomm-AI-research/FFNet/releases/download/models/ffnet150.zip
+wget https://github.com/Qualcomm-AI-research/FFNet/releases/download/models/ffnet134.zip
+wget https://github.com/Qualcomm-AI-research/FFNet/releases/download/models/ffnet86.zip
+wget https://github.com/Qualcomm-AI-research/FFNet/releases/download/models/ffnet56.zip
+wget https://github.com/Qualcomm-AI-research/FFNet/releases/download/models/ffnet34.zip
+wget https://github.com/Qualcomm-AI-research/FFNet/releases/download/models/ffnet18.zip
 
-wget <path_to_ffnet150S.zip>
-wget <path_to_ffnet86S.zip>
-wget <path_to_ffnet78S.zip>
-wget <path_to_ffnet54S.zip>
-wget <path_to_ffnet40S.zip>
+wget https://github.com/Qualcomm-AI-research/FFNet/releases/download/models/ffnet150S.zip
+wget https://github.com/Qualcomm-AI-research/FFNet/releases/download/models/ffnet86S.zip
+wget https://github.com/Qualcomm-AI-research/FFNet/releases/download/models/ffnet78S.zip
+wget https://github.com/Qualcomm-AI-research/FFNet/releases/download/models/ffnet54S.zip
+wget https://github.com/Qualcomm-AI-research/FFNet/releases/download/models/ffnet40S.zip
 
-wget <path_to_ffnet122N.zip>
-wget <path_to_ffnet74N.zip>
-wget <path_to_ffnet46N.zip>
+wget https://github.com/Qualcomm-AI-research/FFNet/releases/download/models/ffnet122N.zip
+wget https://github.com/Qualcomm-AI-research/FFNet/releases/download/models/ffnet74N.zip
+wget https://github.com/Qualcomm-AI-research/FFNet/releases/download/models/ffnet46N.zip
 
-wget <path_to_ffnet122NS.zip>
-wget <path_to_ffnet74NS.zip>
-wget <path_to_ffnet46NS.zip>
+wget https://github.com/Qualcomm-AI-research/FFNet/releases/download/models/ffnet122NS.zip
+wget https://github.com/Qualcomm-AI-research/FFNet/releases/download/models/ffnet74NS.zip
+wget https://github.com/Qualcomm-AI-research/FFNet/releases/download/models/ffnet46NS.zip
 
 
 unzip ffnet101.zip
@@ -46,3 +46,6 @@ unzip ffnet46N.zip
 unzip ffnet122NS.zip
 unzip ffnet74NS.zip
 unzip ffnet46NS.zip
+
+wget https://github.com/Qualcomm-AI-research/FFNet/releases/download/weights/SSL_weights.zip
+unzip SSL_weights.zip

@@ -13,7 +13,6 @@ We propose various sub-families of FFNets, comprised entirely of well supported 
 
 We argue that such simple architectures should be the go-to baselines for various computer vision tasks, and even where they might lack in accuracy against more complex models, the simplicity of optimizing and deploying them makes these a worthy consideration. See the [paper](https://arxiv.org/abs/2206.08236) for details of the models, and extensive comparisons.
 
-
 ## License 
 This software may be subject to U.S. and international export, re-export, or transfer (“export”) laws.  Diversion contrary to U.S. and international law is strictly prohibited.
 See the included [license](LICENSE).
@@ -47,7 +46,9 @@ config.py: Paths to imagenet and cityscapes, as well as to the directory with th
 For inference and evaluation on ImageNet and Cityscapes, the provided docker container suffices. The only somewhat extraneous dependency is SciPy, which is only being used to create a gaussian kernel in ffnet_blocks.py. You can create a gaussian filtering kernel in another way, or replace the anti-aliased downsampling implemented as gaussian filtering + strided convolution with another operation similar in spirit. YMMV.
 
 ### Pre-trained models
-Use the included script fetch_pre_trained_weights.sh to download the weights.
+We make weights available with supervised ImageNet pretraining, intended for further downstream usage, as well as weights for Cityscapes semantic segmentation.
+Use the included script fetch_pre_trained_weights.sh under the model_weights directory, to download the weights.
+**Update 14 March 2024** We also release ImageNet Self Supervised Training weights, trained using [PixPro](https://github.com/zdaxie/PixPro), for downstream usage on tasks such as semantic segmentation, instance segmentation, scene depth, object detection etc.
 
 
 ## Usage
@@ -66,8 +67,6 @@ We also provide example model definitions for interfacing with training pipeline
 
 
 ## Model Documentation
-
-Models released under the same license as the license in the repository
 
 ### GPU Models (Large)
 Images of 1024x2048 are input to these models, and feature maps of 256x512 are output. These models provide a much better speed-accuracy tradeoff than HRNets, as shown in the paper. The 3-stage models (ffnet122N/74N/46N) also provide a much better speed-accuracy tradeoff than DDNets, FANets, and the models listed under "GPU Models (Small)".
